@@ -36,7 +36,7 @@ React front-end that:
 > Add your own!  
 > Put them in `/screenshots/` folder and link them here, like:
 
-![Laser Gun Prototype](Dashboard.jpg)
+![Laser Gun Prototype](Dashboard.png)
 ![React UI Preview](status.png)
 
 ---
