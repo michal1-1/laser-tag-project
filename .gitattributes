@@ -1,25 +1,12 @@
-[# Mark only SOME JS files as vendored (libraries and configs, not your actual code)
-client_app/node_modules/* linguist-vendored=true
-client_app/dist/* linguist-vendored=true  
-client_app/build/* linguist-vendored=true
-node_modules/* linguist-vendored=true
+# Hide client_app completely from language stats
+client_app/* linguist-vendored=true
 
-# Mark config files as vendored (not your main code)
-package*.json linguist-vendored=true
-vite.config.js linguist-vendored=true
-*.config.js linguist-vendored=true
-*.config.ts linguist-vendored=true
-
-# Force boost C++ detection
-arduino_code/* linguist-language=C++
-*.ino linguist-language=C++
+# C++ files
 *.cpp linguist-language=C++
+*.ino linguist-language=C++
 *.h linguist-language=C++
 *.hpp linguist-language=C++
-
-# Give more weight to C++ by marking some files explicitly
-# (אם יש לך עוד קבצי C++ או .c שלא מזוהים)
-*.c linguist-language=C
+arduino_code/* linguist-language=C++
 
 # Documentation
 *.md linguist-documentation=true
