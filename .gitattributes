@@ -1,12 +1,6 @@
-# Hide client_app completely from language stats
-client_app/* linguist-vendored=true
-
-# C++ files
+client_app/* linguist-detectable=false
+*.js linguist-detectable=false
+arduino_code/* linguist-language=C++
 *.cpp linguist-language=C++
 *.ino linguist-language=C++
 *.h linguist-language=C++
-*.hpp linguist-language=C++
-arduino_code/* linguist-language=C++
-
-# Documentation
-*.md linguist-documentation=true
