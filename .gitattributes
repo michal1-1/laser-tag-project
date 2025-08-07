@@ -2,9 +2,10 @@ client_app/** linguist-vendored=true
 node_modules/** linguist-vendored=true
 dist/** linguist-vendored=true
 build/** linguist-vendored=true
+public/** linguist-vendored=true
 
 *.js linguist-vendored=false
-*.css linguist-vendored=false
+*.css linguist-vendored=true
 
 *.ts linguist-vendored=true
 *.tsx linguist-vendored=true
@@ -14,11 +15,10 @@ build/** linguist-vendored=true
 *.json linguist-vendored=true
 
 arduino_code/** linguist-language=C++
+extras_cpp/** linguist-language=C++
 *.ino linguist-language=C++
 *.cpp linguist-language=C++
 *.h linguist-language=C++
-
-extras_cpp/** linguist-language=C++
 
 *.md linguist-documentation=true
 README* linguist-documentation=true
