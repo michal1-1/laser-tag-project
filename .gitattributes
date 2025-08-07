@@ -1,17 +1,17 @@
 client_app/** linguist-vendored=true
-.github/** linguist-vendored=true
-public/** linguist-vendored=true
 node_modules/** linguist-vendored=true
+public/** linguist-vendored=true
+.github/** linguist-vendored=true
 
-*.js linguist-vendored=true
-*.jsx linguist-vendored=true
-*.ts linguist-vendored=true
-*.tsx linguist-vendored=true
-*.css linguist-vendored=true
-*.scss linguist-vendored=true
-*.html linguist-vendored=true
-*.json linguist-vendored=true
-*.vue linguist-vendored=true
+*.js linguist-vendored=false
+*.ts linguist-vendored=false
+*.jsx linguist-vendored=false
+*.tsx linguist-vendored=false
+*.css linguist-vendored=false
+*.scss linguist-vendored=false
+*.html linguist-vendored=false
+*.json linguist-vendored=false
+*.vue linguist-vendored=false
 
 arduino_code/** linguist-language=C++
 *.ino linguist-language=C++
