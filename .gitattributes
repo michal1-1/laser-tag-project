@@ -1,30 +1,22 @@
-# Ignore vendored code
+client_app/** linguist-vendored=true
+
 node_modules/** linguist-vendored=true
 public/** linguist-vendored=true
 
-# Allow detection of JavaScript-related files
 *.js linguist-vendored=false
 *.jsx linguist-vendored=false
 *.ts linguist-vendored=false
 *.tsx linguist-vendored=false
-*.json linguist-vendored=false
 *.css linguist-vendored=false
 *.scss linguist-vendored=false
 *.html linguist-vendored=false
+*.json linguist-vendored=false
 *.vue linguist-vendored=false
 
-# Force C++ to be the main language where applicable
 arduino_code/** linguist-language=C++
 *.ino linguist-language=C++
 *.cpp linguist-language=C++
-*.c++ linguist-language=C++
-*.cc linguist-language=C++
-*.cxx linguist-language=C++
 *.h linguist-language=C++
-*.hpp linguist-language=C++
-*.hxx linguist-language=C++
-*.h++ linguist-language=C++
 
-# Documentation files
 *.md linguist-documentation=true
 README* linguist-documentation=true
