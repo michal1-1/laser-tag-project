@@ -1,1 +1,15 @@
-arduino_code/* linguist-language=C++
+# Mark all C++ files
+*.cpp linguist-language=C++
+*.cc linguist-language=C++  
+*.cxx linguist-language=C++
+*.c++ linguist-language=C++
+*.h linguist-language=C++
+*.hpp linguist-language=C++
+*.hxx linguist-language=C++
+
+# Mark Arduino files as C++
+*.ino linguist-language=C++
+
+# If you have JS files that are libraries/dependencies
+*.js linguist-vendored=true
+node_modules/* linguist-vendored=true
