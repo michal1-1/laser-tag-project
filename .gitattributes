@@ -18,5 +18,7 @@ arduino_code/** linguist-language=C++
 *.cpp linguist-language=C++
 *.h linguist-language=C++
 
+extras_cpp/** linguist-language=C++
+
 *.md linguist-documentation=true
 README* linguist-documentation=true
