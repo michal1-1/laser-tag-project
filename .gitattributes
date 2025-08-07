@@ -1,26 +1,22 @@
-# 🧠 החבאת קבצי ווב מרובים כדי להוריד את האחוזים שלהם
 client_app/** linguist-vendored=true
 node_modules/** linguist-vendored=true
 public/** linguist-vendored=true
 dist/** linguist-vendored=true
 build/** linguist-vendored=true
 
-# ✅ שמירת חשיפה של קבצים בודדים מהווב – כדי שיופיעו באחוזים קטנים בגרף
 *.js linguist-vendored=false
-*.ts linguist-vendored=false
-*.tsx linguist-vendored=false
-*.css linguist-vendored=false
-*.scss linguist-vendored=false
-*.html linguist-vendored=false
-*.vue linguist-vendored=false
-*.json linguist-vendored=false
 
-# 💪 קידום קוד C++ בצורה מפורשת
+*.ts linguist-vendored=true
+*.tsx linguist-vendored=true
+*.css linguist-vendored=true
+*.scss linguist-vendored=true
+*.html linguist-vendored=true
+*.vue linguist-vendored=true
+
 arduino_code/** linguist-language=C++
 *.ino linguist-language=C++
 *.cpp linguist-language=C++
 *.h linguist-language=C++
 
-# 📄 תיעוד
 *.md linguist-documentation=true
 README* linguist-documentation=true
