@@ -1,15 +1,20 @@
-# Mark all C++ files
+# Mark entire client_app directory as vendored (won't count in language stats)
+client_app/* linguist-vendored=true
+
+# Or alternatively, mark it as documentation
+# client_app/* linguist-documentation=true
+
+# Ensure Arduino/C++ files are properly detected
+arduino_code/* linguist-language=C++
+*.ino linguist-language=C++
 *.cpp linguist-language=C++
-*.cc linguist-language=C++  
-*.cxx linguist-language=C++
-*.c++ linguist-language=C++
 *.h linguist-language=C++
 *.hpp linguist-language=C++
-*.hxx linguist-language=C++
 
-# Mark Arduino files as C++
-*.ino linguist-language=C++
-
-# If you have JS files that are libraries/dependencies
-*.js linguist-vendored=true
+# Mark node_modules as vendored (if exists)
 node_modules/* linguist-vendored=true
+
+# Mark common JS config files as vendored
+vite.config.js linguist-vendored=true
+package.json linguist-vendored=true
+package-lock.json linguist-vendored=true
