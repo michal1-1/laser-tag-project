@@ -1,6 +1,10 @@
-client_app/* linguist-detectable=false
-*.js linguist-detectable=false
-arduino_code/* linguist-language=C++
+# Don't count config and build files
+package*.json linguist-vendored=true
+vite.config.js linguist-vendored=true
+node_modules/* linguist-vendored=true
+
+# Make sure C++ files are detected
 *.cpp linguist-language=C++
 *.ino linguist-language=C++
 *.h linguist-language=C++
+arduino_code/* linguist-language=C++
