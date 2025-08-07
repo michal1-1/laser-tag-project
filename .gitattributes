@@ -1,32 +1,25 @@
-# Override everything - mark ALL JS-related files as vendored AND not detectable
-client_app/** linguist-vendored=true linguist-detectable=false
-node_modules/** linguist-vendored=true linguist-detectable=false
-public/** linguist-vendored=true linguist-detectable=false
-src/** linguist-vendored=true linguist-detectable=false
+[# Mark only SOME JS files as vendored (libraries and configs, not your actual code)
+client_app/node_modules/* linguist-vendored=true
+client_app/dist/* linguist-vendored=true  
+client_app/build/* linguist-vendored=true
+node_modules/* linguist-vendored=true
 
-# Mark ALL JS file types as non-detectable
-*.js linguist-vendored=true linguist-detectable=false
-*.jsx linguist-vendored=true linguist-detectable=false
-*.ts linguist-vendored=true linguist-detectable=false  
-*.tsx linguist-vendored=true linguist-detectable=false
-*.json linguist-vendored=true linguist-detectable=false
-*.css linguist-vendored=true linguist-detectable=false
-*.scss linguist-vendored=true linguist-detectable=false
-*.html linguist-vendored=true linguist-detectable=false
-*.vue linguist-vendored=true linguist-detectable=false
+# Mark config files as vendored (not your main code)
+package*.json linguist-vendored=true
+vite.config.js linguist-vendored=true
+*.config.js linguist-vendored=true
+*.config.ts linguist-vendored=true
 
-# Force C++ to be the primary language
-arduino_code/** linguist-language=C++
+# Force boost C++ detection
+arduino_code/* linguist-language=C++
 *.ino linguist-language=C++
 *.cpp linguist-language=C++
-*.c++ linguist-language=C++
-*.cc linguist-language=C++
-*.cxx linguist-language=C++
 *.h linguist-language=C++
 *.hpp linguist-language=C++
-*.hxx linguist-language=C++
-*.h++ linguist-language=C++
+
+# Give more weight to C++ by marking some files explicitly
+# (אם יש לך עוד קבצי C++ או .c שלא מזוהים)
+*.c linguist-language=C
 
 # Documentation
 *.md linguist-documentation=true
-README* linguist-documentation=true
